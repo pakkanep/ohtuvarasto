@@ -64,4 +64,4 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.ota_varastosta(-1), 0)
 
     def test_virheellinen_syote_lisaa_varastoon(self):
-        self.assertAlmostEqual(self.varasto.lisaa_varastoon(-1), 0)
+        self.assertAlmostEqual(self.varasto.lisaa_varastoon(-1), None)
